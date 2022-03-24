@@ -6,7 +6,7 @@
 
 ![scr1](https://user-images.githubusercontent.com/10297748/159930651-bba27bb0-3753-4126-9657-2082a43ffb93.png)
 
-Резльтат в браузере, который получается:
+Результат в браузере, который получается:
 
 ![scr2](https://user-images.githubusercontent.com/10297748/159930903-0414bccd-eb22-4f0e-a5fa-41020514b909.png)
 

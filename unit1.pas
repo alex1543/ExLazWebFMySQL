@@ -28,6 +28,7 @@ type
     GroupBox3: TGroupBox;
     Image1: TImage;
     Image2: TImage;
+    Image3: TImage;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
@@ -65,6 +66,7 @@ begin
 
     daemon:=TTCPHttpDaemon.create;
     Button1.Enabled:=false;
+    Button5.Enabled:=true; // Web
     Edit1.Enabled:=false;
     Button2.Enabled:=true;
     Button3.Enabled:=true;
@@ -75,7 +77,8 @@ end;
 procedure TForm1.Button2Click(Sender: TObject);
 begin
     daemon.Terminate;
-    Button1.Enabled:=true;
+    Button1.Enabled:=true; 
+    Button5.Enabled:=false; // Web
     Edit1.Enabled:=true;
     Button2.Enabled:=false;
     Button3.Enabled:=false;
@@ -103,14 +106,17 @@ begin
   listNew.LoadFromFile('print.php');
   Sleep(1500);
   Memo1.Lines:=listNew;
-
-
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);
+var
+  portDop : String;
 begin
- ShellExecute(Handle, nil, 'explorer', 'http://localhost', nil, SW_HIDE);
+  if Edit1.Text <> '80' then
+   portDop:=':'+Edit1.Text else portDop:='';
 
+  ShellExecute(Handle, Pchar('open'), Pchar('http://localhost'+portDop), Pchar(0), nil, SW_NORMAL);
+ // ShellExecute(Handle, nil, 'explorer', PChar('http://localhost'+portDop), nil, SW_HIDE);
 end;
 
 procedure TForm1.Button6Click(Sender: TObject);

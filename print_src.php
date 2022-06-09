@@ -80,7 +80,7 @@
 				<td style="width:180px;">description</td>
 				<td style="width:180px;">keywords</td>
 			</tr>	
-
+		
 <?php 
 // блок инициализации
 try {
@@ -98,15 +98,18 @@ try {
 	
 //var_dump($resultMF);
 	for($iC=0; $iC<Count($resultMF); $iC++) {
-		?><tr><?php
+		?><tr>
+		<?php
 		for($iR=0; $iR<4; $iR++) {
-			?><td><?php echo $resultMF[$iC][$iR];?></td><?php
+			?><td><?php echo $resultMF[$iC][$iR];?></td>
+			<?php
 		}
-		?></tr><?php
+		?></tr>
+
+		<?php
 	}
-	
 ?>
-				</table>
+	</table>
 			</form>
 			
 			<p>Web server: Lazarus (библиотека Synapse), таблица: myarttable из MySQL и получение данных из таблицы: PHP (с драйвером PDO)</p>

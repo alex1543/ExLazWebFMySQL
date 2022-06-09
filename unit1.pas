@@ -97,15 +97,11 @@ begin
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
-var
-  listNew: TStringlist;
 begin
+  Button6.Click; // Save.
   ShellExecute(Handle, nil, PChar(Edit2.Text), nil, nil, SW_HIDE);
-
-  listNew:=TStringList.Create;
-  listNew.LoadFromFile('print.php');
   Sleep(1500);
-  Memo1.Lines:=listNew;
+  Button8.Click; // Read.
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);

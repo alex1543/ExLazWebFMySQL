@@ -284,10 +284,13 @@ object Form1: TForm1
   object Button7: TButton
     Left = 128
     Height = 25
+    Hint = 'Open source file for editing in Notepad++ or Notepad.'
     Top = 216
     Width = 48
     Caption = 'Open'
     OnClick = Button7Click
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 8
   end
   object GroupBox3: TGroupBox

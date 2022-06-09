@@ -80,8 +80,43 @@
 				<td style="width:180px;">description</td>
 				<td style="width:180px;">keywords</td>
 			</tr>	
+		
+<tr>
+		<td>15</td>
+			<td>Ivanov</td>
+			<td>Engeneer</td>
+			<td>2 class</td>
+			</tr>
 
-<tr><td>15</td><td>Ivanov</td><td>Engeneer</td><td>2 class</td></tr><tr><td>16</td><td>Smirnov</td><td>Cook</td><td>5 level</td></tr><tr><td>18</td><td>Petrov</td><td>Cleaner</td><td>none</td></tr><tr><td>19</td><td>Nikitin</td><td>Programmer</td><td>High lev.</td></tr><tr><td>20</td><td>Kozlovskiy</td><td>Actor</td><td>first</td></tr>				</table>
+		<tr>
+		<td>16</td>
+			<td>Smirnov</td>
+			<td>Cook</td>
+			<td>5 level</td>
+			</tr>
+
+		<tr>
+		<td>18</td>
+			<td>Petrov</td>
+			<td>Cleaner</td>
+			<td>none</td>
+			</tr>
+
+		<tr>
+		<td>19</td>
+			<td>Nikitin</td>
+			<td>Programmer</td>
+			<td>High lev.</td>
+			</tr>
+
+		<tr>
+		<td>20</td>
+			<td>Kozlovskiy</td>
+			<td>Actor</td>
+			<td>first</td>
+			</tr>
+
+			</table>
 			</form>
 			
 			<p>Web server: Lazarus (библиотека Synapse), таблица: myarttable из MySQL и получение данных из таблицы: PHP (с драйвером PDO)</p>

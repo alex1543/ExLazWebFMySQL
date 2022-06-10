@@ -111,8 +111,7 @@ begin
   if Edit1.Text <> '80' then
    portDop:=':'+Edit1.Text else portDop:='';
 
-  ShellExecute(Handle, Pchar('open'), Pchar('http://localhost'+portDop), Pchar(0), nil, SW_NORMAL);
- // ShellExecute(Handle, nil, 'explorer', PChar('http://localhost'+portDop), nil, SW_HIDE);
+  ShellExecute(Handle, nil, 'explorer', PChar('http://localhost'+portDop), nil, SW_HIDE);
 end;
 
 procedure TForm1.Button6Click(Sender: TObject);

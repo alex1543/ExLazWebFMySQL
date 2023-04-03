@@ -1,85 +1,75 @@
-<!doctype html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8" />
-	<title>Отчёт для печати</title>
-	<meta name="description" content="Отчёт для печати" /> 
-    <meta name="Keywords" content="ОТЧЁТ, ПЕЧАТЬ" />
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8" />
+		<title>Учебная программа, как можно обойтись без Apache.</title>
+		<meta name="description" content="Отчёт для печати" /> 
+		<meta name="Keywords" content="ОТЧЁТ, ПЕЧАТЬ" />
+	</head>
+
   	<style>
-    
-	 body {
-		font-family:Verdana, Geneva, Tahoma, sans-serif;
-		font-size:12px;
-	}
-	content {
-		width:100%;
-		min-width:960px;
-		margin:0 auto;
-		border: 0px;
-	}
-	main {
-		margin:0px;
-		float: left;
-		min-width:960px;
-		min-height:495px;
-	}
-	main table {
-		margin:10px;
-		border-collapse: collapse;
-		border: 1px solid #000;
-	}
-	main table tr td {
-		padding:5px;
-		border: 1px solid #000;
-	}
-	main table tr {
-		vertical-align:top;
-	}
-	 
-   .cl {
-		border-top:0px;
-		border-bottom:0px;
-		text-align:left;
-	}	 
-   .cr {
-		border-top:0px;
-		border-bottom:0px;
-		text-align:right;
-    }
-   .c2 {
-		text-align:center;
-		padding:5px;
-		font-size:24px;
-		border:0px;
-		width:100%;
-    }
-	
-   .cH td {
-		text-align:center;
-		font-weight:bold;
-    }	
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+table {
+	width: 90%;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+tr:first-child {
+	background-color: #8b7eac; 
+	font-weight: bold;
+
+}
+tr:nth-child(odd) { 
+	background-color: #9587b9; 
+}
+tr:nth-child(even) { 
+	background-color: #cac3dc; 
+}
+tr {
+	opacity: 0.77;
+}
+tr:hover {
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #7967a6;
+}
+td {
+	padding: 5px;
+    position: relative;
+    border: 1px solid #333;
+    height: 20px;
+}
+h1, h1 a:visited {
+	color: #9587b9;
+    background-color: #fff;
+	font-size: 30px;
+	font-family: Roboto, Geneva, Arial, Helvetica, sans-serif;
+}
+h1 a:hover {
+	color: #cac3dc;
+}
+a {
+	text-decoration: none;
+}   
+
 	</style>
-</head>
-<body>
-	<header>
-		<h3>&nbsp;</h3>
-	</header>
-	<content>	
-		<main>
-					
-			<form action="" method="get">
-			<table class="c2" style="width:530px">
-			<tr><td class="c2">Печать таблицы myarttable из MySQL<br /></td></tr>
-			</table>
-			
-			<table>
-			
-			<tr class="cH">
-				<td style="width:180px;">id</td>
-				<td style="width:180px;">text</td>
-				<td style="width:180px;">description</td>
-				<td style="width:180px;">keywords</td>
-			</tr>	
+	<body>
+    <h1><a href=".">Учебная программа, как можно обойтись без Apache</a></h1>
+	<p>Исходники программы на Lazarus, PHP и MySQL для обучения, <br />как можно обойтись без сервера Apache (из таблицы myarttable, база: MySQL)</p>
+	<table>
+		<tr>
+			<td>id</td>
+			<td>text</td>
+			<td>description</td>
+			<td>keywords</td>
+		</tr>	
 		
 <?php 
 // блок инициализации
@@ -91,7 +81,7 @@ try {
     die();
 }
 
-	$sqlTM="SELECT * FROM myarttable WHERE id>14 ORDER BY id ASC";  // ASC - по возрастанию; DESC - по убыванию.
+	$sqlTM="SELECT * FROM myarttable WHERE id>14 ORDER BY id DESC";  // ASC - по возрастанию; DESC - по убыванию.
 //echo $sqlTM;
 	$stmt = $pdoSet->query($sqlTM);
 	$resultMF = $stmt->fetchAll();
@@ -110,13 +100,6 @@ try {
 	}
 ?>
 	</table>
-			</form>
-			
-			<p>Web server: Lazarus (библиотека Synapse), таблица: myarttable из MySQL и получение данных из таблицы: PHP (с драйвером PDO)</p>
-		</main>
-	</content>
-	<footer>
-		<div>&nbsp;</div> 
-	</footer>	
-</body>
+	<p>Web server: Lazarus (библиотека <b>Synapse</b>), таблица: myarttable из MySQL и получение данных из таблицы: PHP (с драйвером PDO)</p>
+	</body>
 </html>

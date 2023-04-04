@@ -46,6 +46,10 @@ td {
     border: 1px solid #333;
     height: 20px;
 }
+td:first-child {
+	width: 35px;
+	text-align: center;
+}
 h1, h1 a:visited {
 	color: #9587b9;
     background-color: #fff;
@@ -72,73 +76,38 @@ a {
 		</tr>	
 		
 <tr>
-		<td>99</td>
-			<td>Alexey</td>
-			<td>Engineer</td>
-			<td>ITMO</td>
-			</tr>
-
-		<tr>
-		<td>98</td>
-			<td>Ivan</td>
-			<td>Student</td>
-			<td>LETI</td>
-			</tr>
-
-		<tr>
-		<td>97</td>
-			<td>Fedor</td>
-			<td>Loader</td>
-			<td>St. Petersburg State University</td>
-			</tr>
-
-		<tr>
-		<td>96</td>
-			<td>Matvey</td>
-			<td>Programmer</td>
-			<td>Metropolitan College</td>
-			</tr>
-
-		<tr>
-		<td>95</td>
-			<td>Ilya</td>
-			<td>Salesman</td>
-			<td>Hypermarket</td>
-			</tr>
-
-		<tr>
-		<td>94</td>
-			<td>Nikita</td>
-			<td>Student</td>
-			<td>Technological Institute</td>
-			</tr>
-
-		<tr>
-		<td>93</td>
-			<td>Andrew</td>
-			<td>Poet</td>
-			<td>First Electrotechnical University</td>
-			</tr>
-
-		<tr>
-		<td>92</td>
-			<td>Daniel</td>
-			<td>Artist</td>
-			<td>Theater Saturday</td>
-			</tr>
-
-		<tr>
 		<td>20</td>
-			<td>Fedorov</td>
-			<td>Cpp, Delphi, PHP, JS</td>
-			<td>3t</td>
+			<td>Kozlovskiy</td>
+			<td>Actor</td>
+			<td>first</td>
 			</tr>
 
 		<tr>
-		<td>17</td>
-			<td>Baranov</td>
-			<td>Engeneer</td>
+		<td>19</td>
+			<td>Nikitin</td>
+			<td>Programmer</td>
+			<td>High lev.</td>
+			</tr>
+
+		<tr>
+		<td>18</td>
+			<td>Petrov</td>
+			<td>Cleaner</td>
+			<td>none</td>
+			</tr>
+
+		<tr>
+		<td>16</td>
+			<td>Smirnov</td>
+			<td>Cook</td>
+			<td>5 level</td>
+			</tr>
+
+		<tr>
+		<td>15</td>
 			<td>Ivanov</td>
+			<td>Engeneer</td>
+			<td>2 class</td>
 			</tr>
 
 			</table>

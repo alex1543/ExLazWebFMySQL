@@ -46,6 +46,10 @@ td {
     border: 1px solid #333;
     height: 20px;
 }
+td:first-child {
+	width: 35px;
+	text-align: center;
+}
 h1, h1 a:visited {
 	color: #9587b9;
     background-color: #fff;
